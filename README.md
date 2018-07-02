@@ -51,9 +51,12 @@
     "auth" :   {
         "token" : "{토큰 값}",
         "name" : "어드민"
+    },
+    "user" :   {
+        "username" : {사용자 닉네임}
     }
 }
-```
+``` 
 
 > 실패했을 때
 ```json
@@ -96,6 +99,16 @@
 }
 ```
 
+> 권한이 없을 때
+```json
+{
+    "result" : {
+        "success" : false,
+        "message" : "권한이 없습니다."
+    }
+}
+```
+
 > 비밀번호가 기존이랑 같을 때
 ```json
 {
@@ -121,7 +134,7 @@
 {
     "result" : {
         "success" : true,
-        "message" : "게정이 삭제되었습니다."
+        "message" : "계정이 삭제되었습니다."
     }
 }
 ```
@@ -132,6 +145,16 @@
     "result" : {
         "success" : false,
         "message" : "계정이 존재하지 않습니다."
+    }
+}
+```
+
+> 권한이 없을 때
+```json
+{
+    "result" : {
+        "success" : false,
+        "message" : "권한이 없습니다."
     }
 }
 ```

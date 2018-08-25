@@ -6,7 +6,8 @@
 {
     "id" : "admin",
     "pw" : "1234",
-    "name" : "어드민"
+    "name" : "어드민",
+    "profile" : 프로필 사진 객체
 }
 ```
 
@@ -68,14 +69,16 @@
 }
 ```
 
-## `/change`
+## `/:id`
 ### PUT
 **Request**
+
 ```json
 {
-    "id" : "admin",
     "pw" : "1234"
 }
+headers
+ authorization: "token value"
 ```
 **Respones**
 > 성공했을 때
@@ -119,13 +122,15 @@
 }
 ```
 
-## `/delete`
+## `/:id`
 ### DELETE
 **Request**
-```
+```json
 {
     "id" : "admin"
 }
+headers
+ authorization: "token value"
 ```
 
 **Respones**

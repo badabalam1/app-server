@@ -68,7 +68,7 @@
 }
 ```
 
-## `/:id`
+## `/{id}`
 ### PUT
 **Request**
 
@@ -121,7 +121,7 @@ headers
 }
 ```
 
-## `/:id`
+## `/{id}`
 ### DELETE
 **Request**
 ```json

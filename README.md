@@ -50,8 +50,7 @@
         "message" : "로그인에 성공하였습니다.",
     },
     "auth" :   {
-        "token" : "{토큰 값}",
-        "name" : "어드민"
+        "token" : "{토큰 값}"
     },
     "user" :   {
         "username" : "{사용자 닉네임}"
@@ -62,8 +61,8 @@
 > 실패했을 때
 ```json
 {
-    "result_l" : {
-        "success" : true,
+    "result" : {
+        "success" : false,
         "message" : "아이디 혹은 비밀번호가 틀렸습니다."
     }
 }

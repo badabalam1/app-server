@@ -73,7 +73,8 @@
 
 ```json
 {
-    "pw" : "1234"
+    "pw" : "1234",
+    "profile" : "프로필 사진객체"
 }
 headers
  authorization: "token value"
